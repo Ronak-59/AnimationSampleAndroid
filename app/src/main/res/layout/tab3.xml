@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/imgview"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="100dp"
+        card_view:cardCornerRadius="4dp"
+        android:layout_margin="30dp">
+
+        <ImageView
+            android:src="@drawable/album1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imgview"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnFadeIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Fade In" 
+            android:textColor="#FFF"
+            android:layout_weight="1"
+            />
+
+
+
+
+
+        <Button android:background="@color/colorPrimary"
+
+            android:id="@+id/btnFadeOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@id/btnFadeIn"
+            android:text="Fade Out"
+            android:textColor="#FFF"/>
+
+
+
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnCrossFade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@id/btnFadeOut"
+            android:text="Cross Fade"
+            android:textColor="#FFF"/>
+
+
+
+        <Button
+            android:background="@color/colorPrimary"
+
+            android:id="@+id/btnZoomIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@id/btnCrossFade"
+            android:text="Zoom In"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnZoomOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@id/btnZoomIn"
+            android:text="Zoom Out"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnRotate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@id/btnZoomOut"
+            android:text="Rotate"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnMove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@id/btnRotate"
+            android:text="Move"
+            android:textColor="#FFF"/>
+        <Button
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnSlideUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@id/btnMove"
+            android:text="Slide Up"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnSlideDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@id/btnSlideUp"
+            android:text="Slide Down"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnBounce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@id/btnSlideDown"
+            android:text="Bounce"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:id="@+id/btnSequential"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_below="@id/btnBounce"
+            android:text="Sequential Animation"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnTogether"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSequential"
+            android:layout_margin="5dp"
+            android:text="Together Animation"
+            android:textColor="#FFF"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
